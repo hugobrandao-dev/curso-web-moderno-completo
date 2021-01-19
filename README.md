@@ -15,7 +15,7 @@ A MAIORIA ESTÁ FEITO, os que não fiz estão marcados com "NÃO FEITO"
 -> UPDATES
 
 - 19/01/2021
-Problema: Quando se copiam os paths, pelo Visual Stuidio Code, dos 
-arquivos ou pastas a serem excluidos, ele vem o "\", separando a 
+Problema: Quando se copiam os paths pelo Visual Studio Code dos 
+arquivos ou pastas a serem excluidos, eles vem o "\", separando a 
 hierarquia de pasta/arquivo, o gitignore só aceita o "/".
 Solução: Apenas subistitui "\" por "/".
