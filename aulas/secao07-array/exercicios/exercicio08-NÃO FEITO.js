@@ -1,0 +1,3 @@
+function multiplicarValores(primeiro, valor) {
+    
+}
