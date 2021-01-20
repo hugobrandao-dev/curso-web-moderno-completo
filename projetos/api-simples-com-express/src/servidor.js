@@ -28,6 +28,14 @@ app.post('/produto', (req, res, next) => {
     }))
 })
 
+app.put('/produto/:id', (req, res, next) => {
+    res.send(bancoDeDados.atualizarProduto({
+        id: req.params.id,
+        produto: req.body.produto,
+        preco: req.body.preco
+    }))
+})
+
 /* .use atende a todas as requisições, independentes da seção acessada.
 
 app.use('/produtos', (req, res, next) => {

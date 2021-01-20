@@ -27,6 +27,11 @@ function setProduto(produto) {
     return produto
 }
 
+function atualizarProduto(produto) {
+    produtos[produto.id] = produto
+    return produtos[produto.id]
+}
+
 function getProdutos() {
     return Object.values(produtos)
 }
@@ -34,5 +39,6 @@ function getProdutos() {
 module.exports= {
     getProduto,
     getProdutos,
-    setProduto
+    setProduto,
+    atualizarProduto
 }
