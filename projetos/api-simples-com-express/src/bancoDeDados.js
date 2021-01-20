@@ -32,6 +32,12 @@ function atualizarProduto(produto) {
     return produtos[produto.id]
 }
 
+function excluirProduto(id) {
+    const produto = produtos[id]
+    delete produtos[id]
+    return produto
+}
+
 function getProdutos() {
     return Object.values(produtos)
 }
@@ -40,5 +46,6 @@ module.exports= {
     getProduto,
     getProdutos,
     setProduto,
-    atualizarProduto
+    atualizarProduto,
+    excluirProduto
 }

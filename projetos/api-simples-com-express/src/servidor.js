@@ -36,6 +36,10 @@ app.put('/produto/:id', (req, res, next) => {
     }))
 })
 
+app.delete('/produto/:id', (req, res, next) => {
+    res.send(bancoDeDados.excluirProduto(req.params.id))
+})
+
 /* .use atende a todas as requisições, independentes da seção acessada.
 
 app.use('/produtos', (req, res, next) => {
