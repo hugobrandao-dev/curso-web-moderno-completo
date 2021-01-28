@@ -23,7 +23,7 @@ function fazerRequisicaoAlunos(letra) {
     })
 }
 
-let classes = ['a', 'b', 'c', 'd']
+let classes = ['a', 'b', 'c']
 
 Promise.all(classes.map(valor => {
     return fazerRequisicaoAlunos(valor)
