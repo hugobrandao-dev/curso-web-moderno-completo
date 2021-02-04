@@ -31,7 +31,7 @@ let obterAlunos = async () => {
     const turmaC = await getTurma('c')
 
     return [].concat(turmaA, turmaB, turmaC)
-} // Retorna um objeto AsyncFunction
+} // Apesar de explicitarmos um array, retornará um objeto AsyncFunction
 
 obterAlunos()
     .then(alunos => alunos.map(aluno => aluno.nome))
