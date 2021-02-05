@@ -27,3 +27,14 @@ com a resposta do usuário), ao tentarmos subitituir \n para por '',
 ocorria um bug onde a primeira letra era suprimida.
 Solução: No windows a quebra de linha é \r\n, ao invés de somente \n, 
 sendo assim, só fiz a substituição, ficando replace('\r\n', '').
+
+- 05/02/2021
+Problema: Na aula 162, o professor faz um exemplo de Promise utilizando
+setTimeout, para simular o tempo de resposta de uma requisição, na
+função que retorna uma promise temos um parâmetro com seu valor 
+padrão, que é o tempo que será usado no setTimeout, porém, quando 
+queremos executar essa função mais de uma vez, somente a chamada dessa 
+função aceita um novo valor de tempo que seja diferente do valor que 
+colocamos como padrão. Esse problema também foi relatado por outros
+alunos na parte de "Perguntas e resposta" da Udemy.
+Solução: AINDA NÃO HÁ.
