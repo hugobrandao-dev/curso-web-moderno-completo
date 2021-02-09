@@ -17,15 +17,11 @@ funcionarOuNao('Testando...', 0.5)
     .then(
         valor => console.log(valor),
         /*
-        error => { // Embora específico, será chamado em qualquer erro.
+            error => { // Embora específico, será chamado em qualquer erro.
             console.log(`Erro específico: ${error}`)
-        }
+            }
         */
     )
     .then(console.log('Quase fim!'))
     .catch(mensagemErro => console.log(`Erro geral: ${mensagemErro}`))
     .then(() => console.log('Fim!')) // Não há dados a partir do catch
-
-/*
-    
-*/
