@@ -17,5 +17,14 @@ app.post('/usuarios', (requisicao, resposta) => {
     resposta.send('<h2>Submetido com sucesso!!</h2>')
 })
 
+/*[198]
+Pegará o ID que vier junto a URL
+app.post('/usuarios/:id', (requisicao, resposta) => {
+    console.log(requisicao.params.id)
+    console.log(requisicao.body)
+    resposta.send('<h2>Alteração feita com sucesso!!</h2>')
+})
+*/
+
 // Escutará a porta
 app.listen(3003)

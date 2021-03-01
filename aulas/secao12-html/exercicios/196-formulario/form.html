@@ -1,5 +1,12 @@
 <h1>Formulário</h1>
+
 <form action="http://localhost:3003/usuarios" method="POST">
+    <!-- [198]
+        OU 
+<form action="http://localhost:3003/usuarios" method="POST"> -->
+   
+    <!-- Muitas vezes o id pode vir escondido no formulário -->
+        <input type="hidden" name="id" value="3">
     <input type="text" name="nome">
     <input type="password" name="senha">
     <textarea name="biografia" cols="30" rows="10">
@@ -18,12 +25,17 @@
         <option value="java">Java</option>
         <option value="python">Python</option>
         <option value="Ruby">Ruby</option>
+
         <!-- OU -->
         <option>JavaScript</option>
         <option>Go</option>
         <option>C#</option>
     </select>
     <button>Incluir</button>
+        <!-- OU [198] 
+        <button formaction="http://localhost:3003/usuarios">Incluir</button>
+        <button formaction="http://localhost:3003/usuarios/3">Alterar</button> 
+        -->
 </form>
 
 <style>
