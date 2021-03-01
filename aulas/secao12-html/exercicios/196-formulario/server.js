@@ -12,6 +12,7 @@ app.post('/usuarios', (requisicao, resposta) => {
     /*
         Retornará um objeto chave/valor onde CHAVE=NAME e o 
         VALOR=VALUE dos elementos html do formulário;
+        Caso a requisição seja GET, mudar .body para .query
     */
     console.log(requisicao.body)
     resposta.send('<h2>Submetido com sucesso!!</h2>')
